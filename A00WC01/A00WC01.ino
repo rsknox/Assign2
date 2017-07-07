@@ -19,7 +19,7 @@
   modified 8 Sep 2016
   by Colby Newman
 */
-
+int pin5 = 5;
 int pin9 = 9;
 // the setup function runs once when you press reset or power the board
 /*****************************************************************************/
