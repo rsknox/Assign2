@@ -22,13 +22,19 @@
 
 int pin9 = 9;
 // the setup function runs once when you press reset or power the board
+/*****************************************************************************/
+/*     SETUP     SETUP     SETUP     SETUP     SETUP     SETUP     SETUP     */
+/*****************************************************************************/
 void setup() {
   // initialize digital pin LED_BUILTIN as an output.
   pinMode(LED_BUILTIN, OUTPUT);
-  pinMode(pin9, OUTPUT;
+  pinMode(pin9, OUTPUT);
 }
 
 // the loop function runs over and over again forever
+/*****************************************************************************/
+/*     LOOP     LOOP     LOOP     LOOP     LOOP     LOOP     LOOP     LOOP   */
+/*****************************************************************************/
 void loop() {
   digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
   delay(1000);                       // wait for a second
