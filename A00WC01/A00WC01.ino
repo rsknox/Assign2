@@ -19,6 +19,24 @@
   modified 8 Sep 2016
   by Colby Newman
 */
+//=====================================================================
+//                        ISTIME
+//=====================================================================
+int IsTime(unsigned long *timeMark, unsigned long timeInterval){
+  unsigned long timeCurrent;
+  unsigned long timeElapsed;
+  int result = false;
+  
+  timeCurrent = millis();
+  timeElapsed= timeCurrent - *timeMark;
+  
+  if (timeElapsed >= timeInterval){
+    *timeMark = timeCurrent;
+    result = true;
+  }
+  return(result);
+}
+/* * *     ISTIME     * * * * * * * * * * * * * * * * * * * * * * * * */
 
 int pin9 = 9;
 // the setup function runs once when you press reset or power the board
@@ -33,7 +51,7 @@ void setup() {
 
 // the loop function runs over and over again forever
 /*****************************************************************************/
-/*     LOOP     LOOP     LOOP     LOOP     LOOP     LOOP     LOOP     LOOP   */
+/*     LOOP     LOOP     LOOP     LOOP     LOOP     LOOP     LOOP     LOOPgitmerge   */
 /*****************************************************************************/
 void loop() {
   digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
