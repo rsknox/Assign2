@@ -19,6 +19,12 @@
   modified 8 Sep 2016
   by Colby Newman
 */
+/* EDIT History
+ *  Date: 7 Jul 2017
+ *  Author: R. S. Knox
+ *  Summary:  Added timer routine 
+ */
+
 //=====================================================================
 //                        ISTIME
 //=====================================================================
